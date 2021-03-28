@@ -1,0 +1,440 @@
+html{
+  font-size: 64px;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: #154360;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  display: inline;
+  padding: 40px;
+  margin-left: 50px;
+}
+a{
+  font-size: .33rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Pacifico', cursive;
+}
+.active{
+  
+  transition: .8s ease;
+  /* font-size: .35rem; */
+  color: limegreen;
+  opacity: .5;
+  text-decoration: underline;
+}
+/* .home_main{
+  background-color: black;
+  position: relative;
+  height: 700px;
+  
+} */
+.home_main > h1{
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  
+}
+.margin1{
+  background-color: white;
+  width: 50%;
+  height: 5px;
+  position: relative;
+  top: 50px;
+  left: 350px;
+}
+.margin2{
+  background-color: white;
+  /* float: right; */
+  width: 50%;
+  height: 5px;
+  position: relative;
+  top: 450px;
+  left: 350px;
+}
+.intro{
+  text-align: center;
+  font-size: 0.6rem;
+  color: white;
+  position: relative;
+  top: 150px;
+  font-family: sans-serif;
+
+}
+.image1{
+    width: 4%;
+    position: absolute;
+    left:300px;
+    top: 240px;
+    transform: rotate(40deg);
+    opacity: .8;
+    transition: .1s;
+}
+.image1:hover{
+  opacity: 1;
+}
+.image2{
+  width: 5%;
+  position: absolute;
+  left: 380px;
+  top:228px;
+  transform: rotate(-40deg);
+  opacity: .9;
+}
+.image3{
+  width: 12%;
+  position: absolute;
+  top: -190px;
+  right: 180px;
+  opacity: .7;
+  transition: .5s ease;
+  animation: move 2.5s ease-in-out ;
+  -webkit-animation: move 2.5s ease-in-out;
+  animation-delay: 1s;
+}
+@keyframes move {
+  from{
+    opacity: .7;
+   
+  }
+  to{
+    opacity: 1;
+    
+  }
+}
+.image3:hover{
+  opacity: 1;
+
+}
+.image4{
+  width: 3.3%;
+  position: absolute;
+  left: 295px;
+  top: 330px;
+  transform: rotate(60deg);
+  opacity: .6;
+  transition: .5s ease;
+
+}
+.image4:hover{
+   opacity: 1;
+}
+.white_sheet{
+  background-color: white;
+  height: 550px;
+  width: 90%;
+  box-shadow: 0px 0px 10px 1px white;
+  position: relative;
+  top: 20px;
+  
+}
+.white_sheet > p{
+  font-size: .28rem;
+  /* font-family: 'Permanent Marker', cursive; */
+  font-family: 'Yellowtail', cursive;
+  position: relative;
+  top: 150px;
+  left: 130px;
+  padding: 5px;
+  color:  #154360;
+}
+.white_sheet > img{
+  width:30%;
+  position: absolute;
+  right: 160px;
+  top:40px;
+  box-shadow: 0px 0px 10px 3px rgb(25, 117, 25);
+  filter: grayscale(.8);
+  transition: .6s;
+}
+.white_sheet > img:hover{
+  filter: none;
+}
+.green_sheet{
+  background-color: limegreen;
+  height: 550px;
+  width: 80%;
+  box-shadow: 0px 0px 10px 1px white;
+  position: relative;
+  top: 50px;
+
+}
+.green_sheet > p{
+  font-size: .28rem;
+  /* font-family: 'Permanent Marker', cursive; */
+  font-family: 'Yellowtail', cursive;
+  position: relative;
+  top: 150px;
+  left: 130px;
+  padding: 5px;
+  color:  white;
+}
+.imageH{
+  width: 12%;
+  position: absolute;
+  left: 600px;
+  top:80px;
+}
+.imageC{
+  width: 12%;
+  position: absolute;
+  left: 780px;
+  top:80px;
+}
+.imageJ{
+  width: 12%;
+  position: absolute;
+  left: 600px;
+  top:300px;
+}
+.imageR{
+  width: 12%;
+  position: absolute;
+  left: 780px;
+  top: 300px;
+}
+.imageB{
+  width:9%;
+  position: absolute;
+  left:710px
+}
+.any_color{
+  background:linear-gradient(90deg ,white 90%,limegreen 10%);
+  height: 550px;
+  width: 70%;
+  box-shadow: 0px 0px 10px 1px white;
+  position: relative;
+  top: 80px;
+}
+.any_color > p{
+    font-size: .25rem;
+    font-family: 'Yellowtail', cursive;
+    position: relative;
+    top: 150px;
+    left: 40px;
+    padding: 5px;
+    color: #154360;
+}
+.self{
+   width: 10%;
+   position: absolute;
+   left:700px;
+   top:125px;
+}
+.teamwork{
+   width: 10%;
+   position: absolute;
+   left: 700px;
+   top:275px;
+}
+.hard{
+   width: 10%;
+   position: absolute;
+   left:700px;
+   top: 410px;
+}
+.contact{
+   font-size: .3rem;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 0px 0px 8px 1px white;
+}
+.email{
+  font-size: .3rem;
+  position: absolute;
+  left: 125px;
+  top: 400px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 0px 0px 8px 1px white;
+}
+.facebook{
+  width: 6%;
+  position: absolute;
+  right: 500px;
+  top:200px
+}
+.insta{
+  width: 6%;
+  position: absolute;
+  right: 400px;
+  top: 200px;
+}
+.youtube{
+  width: 6%;
+  position:absolute;
+  right: 300px;
+  top: 200px;
+}
+.twitter{
+  width: 6%;
+  position: absolute;
+  right: 460px;
+  top:300px;
+}
+.github{
+  width: 6%;
+  position: absolute;
+  right: 360px;
+  top: 300px;
+}
+
+
+
+@media(max-width:660px){
+  html{
+    font-size: 2.8rem;
+  }
+  li{
+    margin-left: 28px;
+  }
+  a{
+    font-size: .38rem;
+  }
+  .margin1{
+    position: relative;
+   left:125px;
+  } 
+  .margin2{
+    position: relative;
+    top:350px;
+    left:125px;
+    
+  }
+  .white_sheet{
+    width:85%;
+    height: 450px;
+  }
+  .white_sheet > p{
+    left:50px;
+    top:300px;
+    
+  }
+  .white_sheet > img{
+    width: 50%;
+    right: 110px;
+    top:20px;
+  }
+  .image1{
+    width: 7%;
+    left:100px;
+    top:160px
+  }
+  .image2{
+    width: 8%;
+    left:150px;
+    top:155px
+  }
+  .image3{
+    width:16%;
+    right:48px;
+    top:-150px
+  }
+  .image4{
+    width: 6%;
+    left: 100px;
+    top:220px;
+  }
+  .green_sheet{
+    width: 75%;
+    height: 450px;
+    top:50px;
+  }
+  .green_sheet > p{
+    left:50px;
+    top:230px; 
+  }
+  .imageH{
+    left:160px;
+    top:60px;
+    width:15%;
+  }
+  .imageC{
+    left: 220px;
+    top:60px;
+    width: 15%;
+  }
+  .imageB{
+    left: 195px;
+    top:109px;
+  }
+  .imageJ{
+    left: 160px;
+    top:140px;
+    width: 15%;
+  }
+  .imageR{
+    left: 220px;
+    top:140px;
+    width: 15%;
+  }
+  
+  .self{
+    left:50px;
+    width: 18%;
+    top:20px;
+  }
+  .teamwork{
+    left: 180px;
+    width: 18%;
+    top:20px;
+  }
+  .hard{
+    left: 130px;
+    width: 18%;
+    bottom: 50px;
+  }
+  .contact{
+    left: 95px; 
+    top:300px;
+
+  }
+  .email{
+    left:145px
+  }
+  .facebook{
+    width: 10%;
+    left: 150px;
+    top:100px
+  }
+  .insta{
+    width: 10%;
+    left: 235px;
+    top: 100px
+  }
+  .youtube{
+    width: 10%;
+    left: 320px;
+    top: 100px
+  }
+  .twitter{
+    width: 10%;
+    left: 190px;
+    top: 180px;
+  }
+  .github{
+    width: 10%;
+    left: 280px;
+    top:180px
+  }
+}
